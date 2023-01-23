@@ -1,4 +1,4 @@
-# Image-Caption-Generator
+# Image Caption Generator
 A deep learning model that generates captions based on input images.
 
 This notebook aims to generate realistic captions based on input images, using CNN as Image Model and RNN / LSTM as Language Model. The approach utilised here is that of an Encoder-Decoder Model, i.e, the Encoder model will combine both the encoded form of the image and the encoded form of the caption (text) and feed it to the Decoder model. We will train the part of the neural network that handles images and the part that handles languages separately, using images and sentences from separate training sets. This is because the merging of image features with text encodings to a later stage in the architecture is advantageous and can generate better quality captions with smaller layers than the inject architecture.
